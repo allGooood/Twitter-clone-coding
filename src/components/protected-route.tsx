@@ -10,7 +10,7 @@ export default function ProtectedRoute({
 
     const user = auth.currentUser
     console.log(user)
-    
+
     if(user === null){
         return <Navigate to="/login" />
     }
